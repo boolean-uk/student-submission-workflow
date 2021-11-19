@@ -38,9 +38,31 @@ Once this is copied, open up your terminal on Mac or GitBash on Windows. Navigat
 
 ![Clone](images/clone-command.png)
 
-## 4. Work on the project in VS Code
+Once this command completes, you now have a copy of the repository on your local machine. You're now ready to start working on the exercise.
+
+## 3. Work on the project in VS Code
+
+Open VS Code and select the "Open Folder" option:
+
+![VS Code Open](images/vs-code-open-project.png)
+
+Then navigate to and select the folder where you checked out the repository. You are now able to work on the exercise using VS Code.
 
 ## 5. Stage and commit your changes
+
+Once you are ready to commit your changes (see ), there are two steps to follow.
+
+First, we need to tell Git what changes we want to include as part of the next commit. This is done through the `git add` command. If you are unsure what files you've changed, you can run the `git status` command from your repository root to view the current state of your repository:
+
+![Clone](images/git-status.png)
+
+In this example, git is telling us we have 2 changes that have not yet been staged. The `README.md` file has been modified and we've also added a new image `images/vs-code-open-project.png`. Before we can commit our changes, we need to *stage* them using `git add`:
+
+
+
+
+### How often should you commit changes? 
+This depends. If you Google that question you'll find a lot of different answers. Generally, commiting on every minor change is probably overkill, and commiting once per day is not often enough. A commit should encapsulate a small but meaningful change and represent some progress towards your end goal. A commit every 15-60 minutes is probably typical. Commits should also be *atomic* i.e. a single commit should encapsulate everything required to understand and implement a specific change. For example, if we update a `<div>` element in our HTML to add a `class` attribute and we then add some CSS style rules to that class in our stylsheet, both of those changes should be part of the same commit.
 
 ## 6. Push your changes
 
