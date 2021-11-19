@@ -48,7 +48,7 @@ Open VS Code and select the "Open Folder" option:
 
 Then navigate to and select the folder where you checked out the repository. You are now able to work on the exercise using VS Code.
 
-## 5. Stage and commit your changes
+## 4. Stage and commit your changes
 
 Once you are ready to commit your changes there are a couple of steps to follow.
 
@@ -70,7 +70,7 @@ This shows us our changes are now staged and ready to be committed. We can now u
 
 At this point **our commits are still on our local repository only**! 
 
-## 6. Push your changes
+## 5. Push your changes
 The next step is to *push* our commits to the remote repository - i.e your own fork of the exercise repository on GitHub. This enables the instructors to review your work and, when you come to the group projects, will also allow your team mates to incorporate your changes in to their copy of the repository.
 
 Before we push our changes we can use `git status` to check if we have any commits that have not yet been pushed:
