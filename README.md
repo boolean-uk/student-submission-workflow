@@ -50,20 +50,49 @@ Then navigate to and select the folder where you checked out the repository. You
 
 ## 5. Stage and commit your changes
 
-Once you are ready to commit your changes (see ), there are two steps to follow.
+Once you are ready to commit your changes there are a couple of steps to follow.
 
 First, we need to tell Git what changes we want to include as part of the next commit. This is done through the `git add` command. If you are unsure what files you've changed, you can run the `git status` command from your repository root to view the current state of your repository:
 
 ![Clone](images/git-status.png)
 
-In this example, git is telling us we have 2 changes that have not yet been staged. The `README.md` file has been modified and we've also added a new image `images/vs-code-open-project.png`. Before we can commit our changes, we need to *stage* them using `git add`:
+In this example, git is telling us we have 2 changes that have not yet been staged. The `README.md` file has been modified and we've also added a new image `images/vs-code-open-project.png`. In this case, we want both of these changes to be included in our next commit, so we *stage* them using `git add`:
 
+![Add](images/git-add.png)
 
+Once we've done this, we use `git status` again to check the current state of our local repository:
 
+![Add](images/git-status-staged.png)
 
-### How often should you commit changes? 
-This depends. If you Google that question you'll find a lot of different answers. Generally, commiting on every minor change is probably overkill, and commiting once per day is not often enough. A commit should encapsulate a small but meaningful change and represent some progress towards your end goal. A commit every 15-60 minutes is probably typical. Commits should also be *atomic* i.e. a single commit should encapsulate everything required to understand and implement a specific change. For example, if we update a `<div>` element in our HTML to add a `class` attribute and we then add some CSS style rules to that class in our stylsheet, both of those changes should be part of the same commit.
+This shows us our changes are now staged and ready to be committed. We can now use `git commit -m "<commit message>"` to actually commit our changes, replacing `<commit message>` with a short description of what the commit contains:
+
+![Commit](images/git-commit.png)
+
+At this point **our commits are still on our local repository only**! 
 
 ## 6. Push your changes
+The next step is to *push* our commits to the remote repository - i.e your own fork of the exercise repository on GitHub. This enables the instructors to review your work and, when you come to the group projects, will also allow your team mates to incorporate your changes in to their copy of the repository.
 
-## Additional reading
+Before we push our changes we can use `git status` to check if we have any commits that have not yet been pushed:
+
+![Status Push](images/git-status-push.png)
+
+In this case, git tell us us we have 1 commit that has yet to be pushed - `Your branch is ahead of 'origin/main' by 1 commit` just means that our copy of the repository has 1 commit that the remote repository does not yet have (`origin` is the label of the remote repository and `main` is the branch we are working in. We'll come back to these concepts in more detail later in the course).
+
+When we're ready to end our commits to the remote repository we use `git push`:
+
+![Push](images/git-push.png)
+
+...and that's it! There is more to learn on Git, but for now these are the basic commands you need to get started worked on afternoon exercises.
+
+## FAQs
+
+### How often should you commit changes? 
+This depends. If you Google that question you'll find a lot of different answers. Generally, committing on every minor change is probably overkill, and committing once per day is not often enough. A commit should encapsulate a small but meaningful change and represent some progress towards your end goal. A commit every 15-60 minutes is probably typical. Commits should also be *atomic* i.e. a single commit should encapsulate everything required to understand and implement a specific change. For example, if we update a `<div>` element in our HTML to add a `class` attribute and we then add some CSS rules for that class in our stylesheet, both of those changes should probably be part of the same commit.
+
+### How can I check I'm pointing to the correct remote repository?
+You can use the `git remote -v` command to list the remote repositories linked to your local repository:
+
+![Push](images/git-remote.png)
+
+If the repository *isn't* what you expect, then it's likely that you cloned from the wrong place (the default remote is always where you cloned from). If this happens, let an instructor know and they'll work with you to resolve the issue.
