@@ -13,7 +13,7 @@ The first step is **fork** the repository. You can do this from the repository p
 
 ![Forking](images/fork.png)
 
-Forking the repository takes a copy of the repository and add's it to your own GitHub account.
+Forking the repository takes a copy of the repository and adds it to your own GitHub account.
 
 If you cannot see the exercise page or get an error trying to access it, contact your instructor. The cause is likely to be one of the following:
 
