@@ -24,7 +24,7 @@ If you cannot see the exercise page or get an error trying to access it, contact
 ## 2. Clone the fork
 One the repository has been forked, you then *clone* the repository to your local machine. Cloning takes a copy of the repository from GitHub and stores it on your local machine so you can start working on it.
  
-To clone the repository, go to the **forked* repository page in GitHub. This is the copy of the repository that should exist on  your account. You can verify you are looking at the forked copy bu checking for the message underneath the repository name:
+To clone the repository, go to the *forked* repository page in GitHub. This is the copy of the repository that should exist on your own GitHub account. You can verify you are looking at the forked copy by checking for the message underneath the repository name:
 
 ![View Forked](images/view-forked.png)
 
@@ -34,7 +34,7 @@ From here, we want to press the green code button, then select the `SSH` tab, an
 
 The repository SSH URL is what we need to provide to the Git command on our local machine to do the clone.
 
-Once this is copied, open up your terminal on Mac or GitBash on Windows. Navigate in the terminal to the directory where you want to repository code to be cloned to and then use the `git clone` command with the copied SSH url (you should be able to right-click in your terminal to paste the url you copied) to clone the repository. Here is how it should look on GitBash on windows:
+Once this is copied, open up your terminal on Mac or GitBash on Windows. Navigate to the directory where you want to repository code to be cloned to and then use the `git clone` command with the copied SSH url (you should be able to right-click in your terminal to paste the url you copied) to clone the repository. Here is how it should look on GitBash on windows:
 
 ![Clone](images/clone-command.png)
 
@@ -52,11 +52,13 @@ Then navigate to and select the folder where you checked out the repository. You
 
 Once you are ready to commit your changes there are a couple of steps to follow.
 
-First, we need to tell Git what changes we want to include as part of the next commit. This is done through the `git add` command. If you are unsure what files you've changed, you can run the `git status` command from your repository root to view the current state of your repository:
+First, we need to tell Git what changes we want to include as part of the next commit. In git terminology, this is known as *staging* our changes. We *stage* our changes prior to committing them using the `git add` command. 
+
+If you are unsure what files you've changed, you can run the `git status` command from your repository root to view the current state of your repository.
 
 ![Clone](images/git-status.png)
 
-In this example, git is telling us we have 2 changes that have not yet been staged. The `README.md` file has been modified and we've also added a new image `images/vs-code-open-project.png`. In this case, we want both of these changes to be included in our next commit, so we *stage* them using `git add`:
+In this example, git is telling us we have 2 changes that have not yet been staged - we've modified the `index.html` file and also added a new `styles.css` file. In this case, we want both of these changes to be included in our next commit, so we *stage* them using `git add`:
 
 ![Add](images/git-add.png)
 
@@ -64,7 +66,7 @@ Once we've done this, we use `git status` again to check the current state of ou
 
 ![Add](images/git-status-staged.png)
 
-This shows us our changes are now staged and ready to be committed. We can now use `git commit -m "<commit message>"` to actually commit our changes, replacing `<commit message>` with a short description of what the commit contains:
+This shows us our changes are now staged and ready to be committed. We now use `git commit -m "<commit message>"` to actually commit our changes, replacing `<commit message>` with a short description of what the commit contains:
 
 ![Commit](images/git-commit.png)
 
@@ -83,7 +85,17 @@ When we're ready to end our commits to the remote repository we use `git push`:
 
 ![Push](images/git-push.png)
 
-...and that's it! There is more to learn on Git, but for now these are the basic commands you need to get started worked on afternoon exercises.
+Once the push command completes, your changes now existing on the remote repository (i.e. the fork of the exercise repository that exists on your own GitHub) account. You can also verify this by going back to GitHub and checking the commit history of your repository. First select the "clock" icon from the repository home page:
+
+![Show Commits](images/github-select-commits.png)
+
+This takes you to the commit history of the repository:
+
+![Commits](images/github-commits.png)
+
+From here you can see a timeline of every commit pushed to the repository, who made the commit, and you can also click on the commit to view the line-by-line changes on each file.
+
+...and that's it! There is more to learn on Git, but for now these are the basic commands you need to start working on afternoon exercises.
 
 ## FAQs
 
