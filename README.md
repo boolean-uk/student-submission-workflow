@@ -1,5 +1,22 @@
 # Exercise Workflow
-This page describes the workflow for afternoon exercises and projects at Boolean. When given an exercise, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
+This page describes the process for working on exercises at Boolean. There are two main types of exercise: 
+
+1. Afternoon exercises that put in to practice the theory you learn in morning lectures. There will usually be an afternoon exercise each day.
+
+2. Larger challenge exercises that take place across multiple days and allow you to test your understanding of the material covered so far. There will be one or two of these per learning unit.
+
+For both types of exercises, you are required to perform the following steps:
+
+1. [Fork the repository](#fork-the-repository)
+2. [Clone the fork](#clone-the-fork)
+3. [Work on the project in VS Code](#work-on-the-project-in-vs-code)
+4. [Push your changes](#push-your-changes)
+
+For **challenge exercises**, once your exercise is complete, you must also perform an additional step:
+
+5. [Create pull request](#create-pull-request)
+
+When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
 
 Prior to following this guide you should have:
 
@@ -96,6 +113,25 @@ This takes you to the commit history of the repository:
 From here you can see a timeline of every commit pushed to the repository, who made the commit, and you can also click on the commit to view the line-by-line changes on each file.
 
 ...and that's it! There is more to learn on Git, but for now these are the basic commands you need to start working on afternoon exercises.
+
+## 6. Create Pull Request
+Once you have finished a challenge exercise and are ready for it to be reviewed, you should create a *Pull request* (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository"). 
+
+In a "real" project, a Pull Request is used to request that your changes be reviewed and merged in to a repository. For challenge exercises, your changes will not actually be merged but we'll use the Pull Request workflow as a way to provide you with feedback on your submission. Creating a Pull Request will also notify the instructions your submission is ready to be reviewed.
+
+Once your changes are ready to be reviewed, from the GitHub paged of your forked repository, select "Contribute", and then the "Open Pull Request" button.
+
+![CreatePr](images/create-pr.png)
+
+The next screen shows a summary of all the changes you have made. From here, select "Create Pull Request":
+
+![CreatePr](images/create-pr-step-2.png)
+
+Next, you can provide a title and any additional notes you want to provide to the instructors on your implementation. You should set the title to "Exercise Completed" (or something along those lines). 
+
+![CreatePr](images/create-pr-step-3.png)
+
+Select the "Create Pull Request" button - and that's it, you're done!
 
 ## FAQs
 
