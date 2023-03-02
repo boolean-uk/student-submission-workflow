@@ -11,9 +11,6 @@ For both types of exercises, you are required to perform the following steps:
 2. [Clone the fork](#clone-the-fork)
 3. [Work on the project in VS Code](#work-on-the-project-in-vs-code)
 4. [Push your changes](#push-your-changes)
-
-For **challenge exercises**, once your exercise is complete, you must also perform an additional step:
-
 5. [Create pull request](#create-pull-request)
 
 When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
