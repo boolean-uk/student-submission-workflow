@@ -1,5 +1,8 @@
+#Hello, this is my first change to this file
+
 # Exercise Workflow
-This page describes the process for working on exercises at Boolean. There are two main types of exercise: 
+
+This page describes the process for working on exercises at Boolean. There are two main types of exercise:
 
 1. Afternoon exercises that put in to practice the theory you learn in morning lectures. There will usually be an afternoon exercise each day.
 
@@ -13,7 +16,7 @@ For both types of exercises, you are required to perform the following steps:
 4. [Push your changes](#push-your-changes)
 5. [Create pull request](#create-pull-request)
 
-When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
+When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code.
 
 Prior to following this guide you should have:
 
@@ -23,6 +26,7 @@ Prior to following this guide you should have:
 4. Have setup and configured SSH Keys
 
 ## 1. Fork the repository
+
 The first step is **fork** the repository. You can do this from the repository page in GitHub by pressing the **fork** button in the top right corner:
 
 ![Forking](images/fork.png)
@@ -31,14 +35,15 @@ Forking the repository takes a copy of the repository and adds it to your own Gi
 
 If you cannot see the exercise page or get an error trying to access it, contact your instructor. The cause is likely to be one of the following:
 
-* You are not signed in to your GitHub account
-* You have not been added to the GitHub team for your cohort
-* The Cohort GitHub team has not been given access to the repository
+- You are not signed in to your GitHub account
+- You have not been added to the GitHub team for your cohort
+- The Cohort GitHub team has not been given access to the repository
 
 ## 2. Clone the fork
-One the repository has been forked, you then *clone* the repository to your local machine. Cloning takes a copy of the repository from GitHub and stores it on your local machine so you can start working on it.
- 
-To clone the repository, go to the *forked* repository page in GitHub. This is the copy of the repository that should exist on your own GitHub account. You can verify you are looking at the forked copy by checking for the message underneath the repository name:
+
+One the repository has been forked, you then _clone_ the repository to your local machine. Cloning takes a copy of the repository from GitHub and stores it on your local machine so you can start working on it.
+
+To clone the repository, go to the _forked_ repository page in GitHub. This is the copy of the repository that should exist on your own GitHub account. You can verify you are looking at the forked copy by checking for the message underneath the repository name:
 
 ![View Forked](images/view-forked.png)
 
@@ -66,13 +71,13 @@ Then navigate to and select the folder where you checked out the repository. You
 
 Once you are ready to commit your changes there are a couple of steps to follow.
 
-First, we need to tell Git what changes we want to include as part of the next commit. In git terminology, this is known as *staging* our changes. We *stage* our changes prior to committing them using the `git add` command. 
+First, we need to tell Git what changes we want to include as part of the next commit. In git terminology, this is known as _staging_ our changes. We _stage_ our changes prior to committing them using the `git add` command.
 
 If you are unsure what files you've changed, you can run the `git status` command from your repository root to view the current state of your repository.
 
 ![Clone](images/git-status.png)
 
-In this example, git is telling us we have 2 changes that have not yet been staged - we've modified the `index.html` file and also added a new `styles.css` file. In this case, we want both of these changes to be included in our next commit, so we *stage* them using `git add`:
+In this example, git is telling us we have 2 changes that have not yet been staged - we've modified the `index.html` file and also added a new `styles.css` file. In this case, we want both of these changes to be included in our next commit, so we _stage_ them using `git add`:
 
 ![Add](images/git-add.png)
 
@@ -84,10 +89,11 @@ This shows us our changes are now staged and ready to be committed. We now use `
 
 ![Commit](images/git-commit.png)
 
-At this point **our commits are still on our local repository only**! 
+At this point **our commits are still on our local repository only**!
 
 ## 5. Push your changes
-The next step is to *push* our commits to the remote repository - i.e your own fork of the exercise repository on GitHub. This enables the instructors to review your work and, when you come to the group projects, will also allow your team mates to incorporate your changes in to their copy of the repository.
+
+The next step is to _push_ our commits to the remote repository - i.e your own fork of the exercise repository on GitHub. This enables the instructors to review your work and, when you come to the group projects, will also allow your team mates to incorporate your changes in to their copy of the repository.
 
 Before we push our changes we can use `git status` to check if we have any commits that have not yet been pushed:
 
@@ -112,7 +118,8 @@ From here you can see a timeline of every commit pushed to the repository, who m
 ...and that's it! There is more to learn on Git, but for now these are the basic commands you need to start working on afternoon exercises.
 
 ## 6. Create Pull Request
-Once you have finished a challenge exercise and are ready for it to be reviewed, you should create a *Pull request* (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository"). 
+
+Once you have finished a challenge exercise and are ready for it to be reviewed, you should create a _Pull request_ (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository").
 
 In a "real" project, a Pull Request is used to request that your changes be reviewed and merged in to a repository. For challenge exercises, your changes will not actually be merged but we'll use the Pull Request workflow as a way to provide you with feedback on your submission. Creating a Pull Request will also notify the instructions your submission is ready to be reviewed.
 
@@ -124,7 +131,7 @@ The next screen shows a summary of all the changes you have made. From here, sel
 
 ![CreatePr](images/create-pr-step-2.png)
 
-Next, you can provide a title and any additional notes you want to provide to the instructors on your implementation. You should set the title to "Exercise Completed" (or something along those lines). 
+Next, you can provide a title and any additional notes you want to provide to the instructors on your implementation. You should set the title to "Exercise Completed" (or something along those lines).
 
 ![CreatePr](images/create-pr-step-3.png)
 
@@ -132,12 +139,14 @@ Select the "Create Pull Request" button - and that's it, you're done!
 
 ## FAQs
 
-### How often should you commit changes? 
-This depends. If you Google that question you'll find a lot of different answers. Generally, committing on every minor change is probably overkill, and committing once per day is not often enough. A commit should encapsulate a small but meaningful change and represent some progress towards your end goal. A commit every 15-60 minutes is probably typical. Commits should also be *atomic* i.e. a single commit should encapsulate everything required to understand and implement a specific change. For example, if we update a `<div>` element in our HTML to add a `class` attribute and we then add some CSS rules for that class in our stylesheet, both of those changes should probably be part of the same commit.
+### How often should you commit changes?
+
+This depends. If you Google that question you'll find a lot of different answers. Generally, committing on every minor change is probably overkill, and committing once per day is not often enough. A commit should encapsulate a small but meaningful change and represent some progress towards your end goal. A commit every 15-60 minutes is probably typical. Commits should also be _atomic_ i.e. a single commit should encapsulate everything required to understand and implement a specific change. For example, if we update a `<div>` element in our HTML to add a `class` attribute and we then add some CSS rules for that class in our stylesheet, both of those changes should probably be part of the same commit.
 
 ### How can I check I'm pointing to the correct remote repository?
+
 You can use the `git remote -v` command to list the remote repositories linked to your local repository:
 
 ![Push](images/git-remote.png)
 
-If the repository *isn't* what you expect, then it's likely that you cloned from the wrong place (the default remote is always where you cloned from). If this happens, let an instructor know and they'll work with you to resolve the issue.
+If the repository _isn't_ what you expect, then it's likely that you cloned from the wrong place (the default remote is always where you cloned from). If this happens, let an instructor know and they'll work with you to resolve the issue.
