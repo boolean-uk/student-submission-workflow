@@ -11,7 +11,11 @@ For both types of exercises, you are required to perform the following steps:
 2. [Clone the fork](#clone-the-fork)
 3. [Work on the project in VS Code](#work-on-the-project-in-vs-code)
 4. [Push your changes](#push-your-changes)
-5. [Create pull request](#create-pull-request)
+5. [Your pair clones your repo](#pair-clones-repo)
+6. [Your pair works on the project](#pair-works-on-project)
+7. [Your pair pushes the changes](#pair-pushes-changes)
+8. [Your pair forks your repo](#pair-forks-your-repo)
+9. [Create pull request](#create-pull-request)
 
 When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
 
@@ -111,7 +115,20 @@ From here you can see a timeline of every commit pushed to the repository, who m
 
 ...and that's it! There is more to learn on Git, but for now these are the basic commands you need to start working on afternoon exercises.
 
-## 6. Create Pull Request
+## 5. Pair Clones Repo
+1. Send your pair the URL to your GitHub repo (e.g. https://github.com/your_user_name/student-submission-workflow) , or the SSH link that you use to clone (e.g. git@github.com:your_user_name/student-submission-workflow.git)
+2. They can then run `git clone` to clone your repo to their laptop.
+
+## 6. pair works on project
+1. As per the previous example of making changes in VS Code, your pair now makes changes to the code base, then stages (`git add .`) and commits (`git commit -m 'write a useful message here'`).
+
+## 7. Pair pushes changes
+1. The pair can then run `git push`.
+
+## 8. Pair forks your repo
+Once you are happy that you have completed all changes to the codebase (and everyone has pushed their code to your repo) then the pair can FORK from your repo (do not fork from the original Boolean-UK repo).
+
+## 9. Create Pull Request
 Once you have finished a challenge exercise and are ready for it to be reviewed, you should create a *Pull request* (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository"). 
 
 In a "real" project, a Pull Request is used to request that your changes be reviewed and merged in to a repository. For challenge exercises, your changes will not actually be merged but we'll use the Pull Request workflow as a way to provide you with feedback on your submission. Creating a Pull Request will also notify the instructions your submission is ready to be reviewed.
