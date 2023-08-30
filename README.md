@@ -119,7 +119,7 @@ From here you can see a timeline of every commit pushed to the repository, who m
 1. Send your pair the URL to your GitHub repo (e.g. https://github.com/your_user_name/student-submission-workflow) , or the SSH link that you use to clone (e.g. git@github.com:your_user_name/student-submission-workflow.git)
 2. They can then run `git clone` to clone your repo to their laptop.
 
-## 6. pair works on project
+## 6. Pair works on project
 1. As per the previous example of making changes in VS Code, your pair now makes changes to the code base, then stages (`git add .`) and commits (`git commit -m 'write a useful message here'`).
 
 ## 7. Pair pushes changes
@@ -129,7 +129,11 @@ From here you can see a timeline of every commit pushed to the repository, who m
 Once you are happy that you have completed all changes to the codebase (and everyone has pushed their code to your repo) then the pair can FORK from your repo (do not fork from the original Boolean-UK repo).
 
 ## 9. Create Pull Request
-Once you have finished a challenge exercise and are ready for it to be reviewed, you should create a *Pull request* (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository"). 
+Once you have finished a an exercise or a challenge, and are ready for it to be reviewed, you should create a *Pull request* (sometimes shortened to "PR") in GitHub back to the original repository you created the fork from (also know as the "upstream repository").
+
+> **Both people in the pair need to complete this action from THEIR OWN repositories. So it is important that the person who did not fork from the Boolean UK account remembers to fork from the person who did.**
+> 
+> For example, Alex has forked the "JS Intro" repository from the Boolean UK account (repo: "boolean-uk/js-intro"). Alex is working with Chris. Both Alex and Chris have been working from a clone of Alex's repository (repo: "alex/js-intro"). Once they have both finished their work, Chris needs to FORK Alex's repository so that Chris has a copy of the finished work on their GitHub account (repo: "chris/js-intro").
 
 In a "real" project, a Pull Request is used to request that your changes be reviewed and merged in to a repository. For challenge exercises, your changes will not actually be merged but we'll use the Pull Request workflow as a way to provide you with feedback on your submission. Creating a Pull Request will also notify the instructions your submission is ready to be reviewed.
 
