@@ -7,15 +7,15 @@ This page describes the process for working on exercises at Boolean. There are t
 
 For both types of exercises, you are required to perform the following steps:
 
-1. [Fork the repository](#fork-the-repository)
-2. [Clone the fork](#clone-the-fork)
-3. [Work on the project in VS Code](#work-on-the-project-in-vs-code)
-4. [Push your changes](#push-your-changes)
-5. [Your pair clones your repo](#pair-clones-repo)
-6. [Your pair works on the project](#pair-works-on-project)
-7. [Your pair pushes the changes](#pair-pushes-changes)
-8. [Your pair forks your repo](#pair-forks-your-repo)
-9. [Create pull request](#create-pull-request)
+1. [Fork the repository](#1-fork-the-repository)
+2. [Clone the fork](#2-clone-the-fork)
+3. [Work on the project in VS Code](#3-work-on-the-project-in-vs-code)
+4. [Push your changes](#4-push-your-changes)
+5. [Your pair clones your repo](#5-pair-clones-repo)
+6. [Your pair works on the project](#6-pair-works-on-project)
+7. [Your pair pushes the changes](#7-pair-pushes-changes)
+8. [Your pair forks your repo](#8-pair-forks-your-repo)
+9. [Create pull request](#9-create-pull-request)
 
 When given an exercise of either type, you will be provided with a link to a GitHub repository that contains the exercise instructions and any template code. 
 
