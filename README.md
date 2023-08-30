@@ -10,7 +10,7 @@ For both types of exercises, you are required to perform the following steps:
 1. [Fork the repository](#1-fork-the-repository)
 2. [Clone the fork](#2-clone-the-fork)
 3. [Work on the project in VS Code](#3-work-on-the-project-in-vs-code)
-4. [Push your changes](#4-push-your-changes)
+4. [Stage and commit your changes](#4-stage-and-commit-your-changes)
 5. [Your pair clones your repo](#5-pair-clones-repo)
 6. [Your pair works on the project](#6-pair-works-on-project)
 7. [Your pair pushes the changes](#7-pair-pushes-changes)
